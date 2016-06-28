@@ -18,8 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-
+        
         // Set up the Parse SDK
+      
         let configuration = ParseClientConfiguration {
             $0.applicationId = "makestagram"
             $0.server = "https://makestagram-parse-bdkg.herokuapp.com/parse"
@@ -37,6 +38,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             print("No logged in user :(")
         }
+        
+        let acl = PFACL()
+        acl.publicReadAccess = true
+        PFACL.setDefaultACL(acl, withAccessForCurrentUser: true)
         
         return true
     }

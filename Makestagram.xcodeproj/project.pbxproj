@@ -34,6 +34,7 @@
 		7D63C9F028017F1039333727 /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5275ED9044CFE97E233A1AD8 /* Pods_Makestagram.framework */; };
 		C40549171D2256DB00041A10 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40549161D2256DB00041A10 /* PostTableViewCell.swift */; };
 		C422F64F1D2210BE003867FA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C422F64E1D2210BE003867FA /* Post.swift */; };
+		C43CFF0D1D24AFA800AB5033 /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43CFF0C1D24AFA800AB5033 /* ParseHelper.swift */; };
 		C4CCF19D1D20FFF200EA3EEB /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CCF19C1D20FFF200EA3EEB /* TimelineViewController.swift */; };
 		C4CCF19F1D21001000EA3EEB /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CCF19E1D21001000EA3EEB /* PhotoViewController.swift */; };
 		C4CCF1A11D21002300EA3EEB /* FriendSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CCF1A01D21002300EA3EEB /* FriendSearchViewController.swift */; };
@@ -101,6 +102,7 @@
 		73E1010C1BADD0734C0AF565 /* Pods_MakestagramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakestagramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40549161D2256DB00041A10 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		C422F64E1D2210BE003867FA /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		C43CFF0C1D24AFA800AB5033 /* ParseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseHelper.swift; sourceTree = "<group>"; };
 		C4CCF19C1D20FFF200EA3EEB /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		C4CCF19E1D21001000EA3EEB /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		C4CCF1A01D21002300EA3EEB /* FriendSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendSearchViewController.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			children = (
 				6277189D1B0A58E800AF5C6E /* ErrorHandling.swift */,
 				6277189E1B0A58E800AF5C6E /* ParseLoginHelper.swift */,
+				C43CFF0C1D24AFA800AB5033 /* ParseHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -522,6 +525,7 @@
 				C4CCF19F1D21001000EA3EEB /* PhotoViewController.swift in Sources */,
 				62C8C1E61B06BD6500DC3EA7 /* AppDelegate.swift in Sources */,
 				627718971B0A581700AF5C6E /* FilterViewController.swift in Sources */,
+				C43CFF0D1D24AFA800AB5033 /* ParseHelper.swift in Sources */,
 				C40549171D2256DB00041A10 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

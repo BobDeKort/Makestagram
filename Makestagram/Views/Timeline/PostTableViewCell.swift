@@ -8,7 +8,6 @@
 
 import UIKit
 import Bond
-import Parse
 
 class PostTableViewCell: UITableViewCell {
     
@@ -34,6 +33,6 @@ class PostTableViewCell: UITableViewCell {
     }
     
     @IBAction func likeButtonTaped(sender: AnyObject){
-        post?.toggleLikePost(PFUser.currentUser()!)
+        
     }
 }

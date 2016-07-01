@@ -21,7 +21,7 @@ class ParseLoginHelper : NSObject {
     static let errorDomain = "com.makeschool.parseloginhelpererrordomain"
     static let usernameNotFoundErrorCode = 1
     static let usernameNotFoundLocalizedDescription = "Could not retrieve Facebook username"
-
+    var parseLoginHelper: ParseLoginHelper!
     let callback: ParseLoginHelperCallback
 
     init(callback: ParseLoginHelperCallback) {

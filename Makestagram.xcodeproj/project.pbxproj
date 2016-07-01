@@ -39,6 +39,7 @@
 		C4CCF19F1D21001000EA3EEB /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CCF19E1D21001000EA3EEB /* PhotoViewController.swift */; };
 		C4CCF1A11D21002300EA3EEB /* FriendSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CCF1A01D21002300EA3EEB /* FriendSearchViewController.swift */; };
 		C4CCF1A61D210BDA00EA3EEB /* PhotoTakingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CCF1A51D210BDA00EA3EEB /* PhotoTakingHelper.swift */; };
+		C4EFA4391D26088300782E00 /* FriendSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EFA4381D26088300782E00 /* FriendSearchTableViewCell.swift */; };
 		FBBEA52ABA0EFDBFAFF2DDE7 /* Pods_MakestagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E1010C1BADD0734C0AF565 /* Pods_MakestagramTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +108,7 @@
 		C4CCF19E1D21001000EA3EEB /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		C4CCF1A01D21002300EA3EEB /* FriendSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendSearchViewController.swift; sourceTree = "<group>"; };
 		C4CCF1A51D210BDA00EA3EEB /* PhotoTakingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingHelper.swift; sourceTree = "<group>"; };
+		C4EFA4381D26088300782E00 /* FriendSearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendSearchTableViewCell.swift; sourceTree = "<group>"; };
 		ED3DF779CFCA9F3C8E3B5287 /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -277,6 +279,7 @@
 		C40549101D224F8800041A10 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C4EFA4371D26085C00782E00 /* FriendSearch */,
 				C40549111D224F8800041A10 /* Timeline */,
 			);
 			path = Views;
@@ -304,6 +307,14 @@
 				C4CCF1A51D210BDA00EA3EEB /* PhotoTakingHelper.swift */,
 			);
 			path = PhotoTaking;
+			sourceTree = "<group>";
+		};
+		C4EFA4371D26085C00782E00 /* FriendSearch */ = {
+			isa = PBXGroup;
+			children = (
+				C4EFA4381D26088300782E00 /* FriendSearchTableViewCell.swift */,
+			);
+			path = FriendSearch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,9 +375,11 @@
 				TargetAttributes = {
 					62C8C1DF1B06BD6500DC3EA7 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 3FX26JCU7E;
 					};
 					62C8C1F41B06BD6500DC3EA7 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 3FX26JCU7E;
 						TestTargetID = 62C8C1DF1B06BD6500DC3EA7;
 					};
 				};
@@ -523,6 +536,7 @@
 				C4CCF19D1D20FFF200EA3EEB /* TimelineViewController.swift in Sources */,
 				C4CCF1A61D210BDA00EA3EEB /* PhotoTakingHelper.swift in Sources */,
 				C4CCF19F1D21001000EA3EEB /* PhotoViewController.swift in Sources */,
+				C4EFA4391D26088300782E00 /* FriendSearchTableViewCell.swift in Sources */,
 				62C8C1E61B06BD6500DC3EA7 /* AppDelegate.swift in Sources */,
 				627718971B0A581700AF5C6E /* FilterViewController.swift in Sources */,
 				C43CFF0D1D24AFA800AB5033 /* ParseHelper.swift in Sources */,
@@ -658,14 +672,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = "$(inherited)";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Makestagram/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "Make-School.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BobDeKort.Makestagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Makestagram/Makestagram-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -677,14 +694,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = "$(inherited)";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Makestagram/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "Make-School.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BobDeKort.Makestagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Makestagram/Makestagram-Bridging-Header.h";
 			};
 			name = Release;
@@ -694,6 +714,8 @@
 			baseConfigurationReference = 3F1C1A07E248B3D1C3CDB13C /* Pods-MakestagramTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -706,6 +728,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Make-School.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Makestagram.app/Makestagram";
 			};
 			name = Debug;
@@ -715,6 +738,8 @@
 			baseConfigurationReference = 4BC22291109239F1C07ADEBF /* Pods-MakestagramTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -723,6 +748,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Make-School.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Makestagram.app/Makestagram";
 			};
 			name = Release;
